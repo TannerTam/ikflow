@@ -866,7 +866,7 @@ wheels = [
 [[package]]
 name = "jrl"
 version = "0.1.2"
-source = { git = "https://github.com/TannerTam/Jrl.git#1fa1d483482b08497354b6e720b396e8232edd1b" }
+source = { git = "https://github.com/TannerTam/Jrl.git#b4555d5c905d2f273112bfddb360d2abaf5edd0a" }
 dependencies = [
     { name = "jupyter" },
     { name = "klampt" },
