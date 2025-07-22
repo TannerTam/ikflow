@@ -19,7 +19,7 @@ dependencies = [
     "tabulate>=0.9.0",
     "tqdm>=4.67.1",
     "wandb>=0.19.8",
-    "jrl @ git+https://github.com/jstmn/Jrl.git@2ba7c3995b36b32886a8aa021a00c73b2cd55b2c",
+    "jrl @ git@git.woa.com:tannertam/jrl.git@1fa1d483482b08497354b6e720b396e8232edd1b",
     "pyqt5>=5.15.11",
     "pytest>=8.3.5",
 ]
