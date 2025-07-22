@@ -7,7 +7,7 @@ Normalizing flows for Inverse Kinematics. Open source implementation to the pape
 Runtime curve for getting *exact* IK solutions for the Franka Panda (maximum positional/rotational error: 1mm, .572 deg) (generated with `
 python scripts/benchmark_generate_exact_solutions.py --model_name=panda__full__lp191_5.25m`):
 
-![alt text](../media/exact_ik_runtime__model:panda__full__lp191_5.25m.png?raw=true)
+![alt text](picture/exact_ik_runtime__model_panda__full__lp191_5.25m.png)
 
 
 ## Setup
@@ -67,7 +67,7 @@ Run the following:
 ```
 uv run python scripts/visualize.py --model_name=fetch_arm__large__mh186_9.25m --demo_name=oscillate_target
 ```
-![ikflow solutions for oscillating target pose](../media/ikflow__fetcharm__oscillating-target.gif?raw=true)
+![ikflow solutions for oscillating target pose](picture/ikflow__fetcharm__oscillating-target.gif?raw=true)
 
 Run an interactive notebook: `jupyter notebook notebooks/robot_visualizations.ipynb`
 
