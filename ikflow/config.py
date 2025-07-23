@@ -29,3 +29,5 @@ ALL_DATASET_TAGS = [DATASET_TAG_NON_SELF_COLLIDING]
 # the columns reserved for the joints. On other terms, this only applies for the columns with indexes greater than
 # n_dofs.
 SIGMOID_SCALING_ABS_MAX = 1.0
+
+device = DEVICE
