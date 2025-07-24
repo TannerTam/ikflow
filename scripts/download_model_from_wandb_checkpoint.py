@@ -47,7 +47,7 @@ if __name__ == "__main__":
     wandb_entity, wandb_project = get_wandb_project()
     t0 = time()
     api = wandb.Api()
-    artifact = api.artifact(f"{wandb_entity}/{wandb_project}/model-{args.wandb_run_id}:best_k")
+    artifact = api.artifact(f"{wandb_entity}/{wandb_project}/model-{args.wandb_run_id}:best")
     download_dir = artifact.download()
     print(f"Downloaded artifact in {round(time() - t0, 2)}s")
 
@@ -58,7 +58,7 @@ if __name__ == "__main__":
     run_name = run.name
     robot_name = run.config["robot"]
     ckpt_filepath = os.path.join(download_dir, "model.ckpt")
-    checkpoint = torch.load(ckpt_filepath, map_location=lambda storage, loc: storage)
+    checkpoint = torch.load(ckpt_filepath, map_location=lambda storage, loc: storage, weights_only=False)
     state_dict = format_state_dict(checkpoint["state_dict"])
     global_step = str(checkpoint["global_step"] / 1e6) + "M"
 
